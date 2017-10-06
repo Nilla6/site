@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'webapp/css/bootstrap.min.css' %}" type = 'text/css'/>
+  <title>Welcome</title>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand navbar-caption1" href="#">Je Ne Sais Quoi Events</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
